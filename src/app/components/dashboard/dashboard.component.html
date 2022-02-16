@@ -1,0 +1,19 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Surname</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody  *ngFor="let element of array;let i=index;">
+      <tr>
+        <td>{{i+1}}</td>
+        <td>{{element.name}}</td>
+        <td>{{element.surName}}</td>
+        <td>{{element.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+  
